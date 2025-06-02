@@ -1,37 +1,22 @@
 {
-  // TypeScript compiler configuration for the simple-contacts project
   "compilerOptions": {
-    // Target ES2020 for modern browser support (matches Vite config)
     "target": "es2020",
-    // Use ES modules for import/export syntax
     "module": "es2020",
-    // Include DOM types for browser APIs (document, window, etc.)
     "lib": ["es2020", "dom", "dom.iterable"],
-    // Enable interop between CommonJS and ES modules
     "moduleResolution": "node",
-    // Allow importing JSON files
     "resolveJsonModule": true,
-    // Isolate modules for better performance
     "isolatedModules": true,
-    // Don't emit JS files (Vite handles this)
     "noEmit": true,
-    // Enable all strict type checking options
     "strict": true,
-    // No unused locals (helps catch dead code)
     "noUnusedLocals": true,
-    // No unused parameters (helps catch dead code)
     "noUnusedParameters": true,
-    // Ensure imports are used
     "noUncheckedIndexedAccess": false,
-    // Skip type checking of declaration files for faster builds
     "skipLibCheck": true
   },
-  // Include all TypeScript files in the project
   "include": [
     "*.ts",
     "**/*.ts"
   ],
-  // Exclude node_modules and build output
   "exclude": [
     "node_modules",
     "dist"
